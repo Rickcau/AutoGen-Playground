@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /example.env
 /OAI_CONFIG.json
+/example2.env
