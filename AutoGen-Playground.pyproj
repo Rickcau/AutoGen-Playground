@@ -1,0 +1,72 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6bcd3802-0332-4eeb-90bd-17cd1ed8e6f4</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>AutoGen_RAG_Gradio\app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>AutoGen-Playground</Name>
+    <RootNamespace>AutoGen-Playground</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AutoGen_RAG_Gradio\app.py" />
+    <Compile Include="Gardio Test\AppChat.py" />
+    <Compile Include="Gradio-Chat\app.py" />
+    <Compile Include="Multiple_Agents\Filtering-Plan.py" />
+    <Compile Include="New-Product-Plan.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Simple-Gen-Chat-Client.py" />
+    <Compile Include="Simple-Two-Agents.py" />
+    <Compile Include="test.py" />
+    <Compile Include="Multiple_Agents\New-Product-Plan.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="autogen.png" />
+    <Content Include="AutoGen_RAG_Gradio\autogen.png" />
+    <Content Include="AutoGen_RAG_Gradio\Dockerfile" />
+    <Content Include="AutoGen_RAG_Gradio\README.md" />
+    <Content Include="AutoGen_RAG_Gradio\requirements.txt" />
+    <Content Include="example2.env" />
+    <Content Include="example.env" />
+    <Content Include="Gradio-Chat\README.md" />
+    <Content Include="Gradio-Chat\requirements.txt" />
+    <Content Include="human.png" />
+    <Content Include="Images\autogen.png" />
+    <Content Include="Images\human.png" />
+    <Content Include="README.MD" />
+    <Content Include="OAI_CONFIG.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AutoGen_RAG_Gradio\" />
+    <Folder Include="Gradio-Chat\" />
+    <Folder Include="Gardio Test\" />
+    <Folder Include="Images\" />
+    <Folder Include="Multiple_Agents\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

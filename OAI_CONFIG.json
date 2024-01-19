@@ -1,0 +1,16 @@
+[
+    {
+        "model": "rdc-OpenAI-Demo-deployment",
+        "api_key": "b3025863ec174ca08b98772e4f4dd048",
+        "base_url": "https://rdc-azure-openai.openai.azure.com/",
+        "api_type": "azure",
+        "api_version": "2023-07-01-preview"
+    },
+    {
+        "model": "gpt-4-sweden",
+        "api_key": "5a587061c4f544b8a2af61f8b72042ec",
+        "base_url": "https://rdc-openai-sweden.openai.azure.com/",
+        "api_type": "azure",
+        "api_version": "2023-07-01-preview"
+    }
+]
