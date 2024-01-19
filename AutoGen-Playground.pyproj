@@ -40,6 +40,7 @@
     <Content Include="AutoGen_RAG_Gradio\Dockerfile" />
     <Content Include="AutoGen_RAG_Gradio\README.md" />
     <Content Include="AutoGen_RAG_Gradio\requirements.txt" />
+    <Content Include="example.env.bak" />
     <Content Include="example2.env" />
     <Content Include="example.env" />
     <Content Include="Gradio-Chat\README.md" />
@@ -47,6 +48,7 @@
     <Content Include="human.png" />
     <Content Include="Images\autogen.png" />
     <Content Include="Images\human.png" />
+    <Content Include="OAI_CONFIG.json.bak" />
     <Content Include="README.MD" />
     <Content Include="OAI_CONFIG.json" />
   </ItemGroup>

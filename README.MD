@@ -1,6 +1,8 @@
 # AutoGen Examples
 This is a simple repo to store the various AutoGen examples I am playing with, it's a work in-progress and I am using it to play with AutoGen.  I hope you find it useful as well. 
 
+If you want to see an very interesting multi-agent example run the New-Product-Plan.py program.
+
 Needs to have a Azure Open AI rescource with a GPT4.0 model deployed.
 
 For more details. look at MS repo:
@@ -40,7 +42,7 @@ If this becomes a challenge for you, you can just load the settings with a JSON 
 
 '''
 
-## Modify the OAI_CONFIG.json file to point to your models
+## Modify the OAI_CONFIG.json.bak file to point to your models and rename it to OAI_CONFIG.json
 
 '''
        [
@@ -60,6 +62,11 @@ If this becomes a challenge for you, you can just load the settings with a JSON 
         }
       ]
 ,,,
+
+## Modify the example.env.bak file to point to your models and rename it to example.env
+
+Some of the examples pull the model details fron the OAI_CONFIG.json file and some use the exanple.env.
+
 
 ## Simple-Two-Agent (Simply-Two-Agents.py)
 The idea here is to demostrate how a Human UserProxy can interact with two Assistants that produce two different outcomes.  This is fundemental to AutoGen 

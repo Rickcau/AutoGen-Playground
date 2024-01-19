@@ -21,5 +21,5 @@ assistant = AssistantAgent("assistant", llm_config={"config_list": config_list})
 # you can override human input, modify auto reply, execut blocks etc, see https://microsoft.github.io/autogen/docs/reference/agentchat/user_proxy_agent
 user_proxy = UserProxyAgent("user_proxy", code_execution_config={"work_dir": "coding"})
 print("Let's use the 1st assistant now.")
-user_proxy.initiate_chat(assistant, message="Create a Web Front that has ChatGPT style interface that uses AutoGen agents.")
+user_proxy.initiate_chat(assistant, message="Create a Web Frontend that has ChatGPT style interface that uses AutoGen agents.")
 
